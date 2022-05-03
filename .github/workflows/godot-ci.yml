@@ -17,7 +17,7 @@ jobs:
         with:
           lfs: true
       - name: Test
-        run: godot --no-window -s addons/gut/gut_cmdln.gd -d --path $PWD -gexit -gdir=res://test/unit
+        run: godot -s addons/gut/gut_cmdln.gd -d --path $PWD -gexit -gdir=res://test/unit
       - name: Shouldntfail
         run: echo Should not get here
           
