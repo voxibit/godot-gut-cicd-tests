@@ -1,0 +1,17 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Scenes/my_cam.gd" type="Script" id=1]
+[ext_resource path="res://Scenes/my_mesh.cs" type="Script" id=2]
+
+[sub_resource type="CubeMesh" id=1]
+
+[node name="Spatial" type="Spatial"]
+
+[node name="MeshInstance" type="MeshInstance" parent="."]
+mesh = SubResource( 1 )
+material/0 = null
+script = ExtResource( 2 )
+
+[node name="Camera" type="Camera" parent="."]
+transform = Transform( 0.973742, 0.0366917, -0.224678, 0, 0.986926, 0.161173, 0.227654, -0.156941, 0.961012, -1.04177, 1.37744, 3.89715 )
+script = ExtResource( 1 )

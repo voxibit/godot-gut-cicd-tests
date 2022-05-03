@@ -1,0 +1,8 @@
+/home/dwooten/godot/cicd/.mono/temp/obj/Debug/cicd.csproj.AssemblyReference.cache
+/home/dwooten/godot/cicd/.mono/temp/obj/Debug/cicd.AssemblyInfoInputs.cache
+/home/dwooten/godot/cicd/.mono/temp/obj/Debug/cicd.AssemblyInfo.cs
+/home/dwooten/godot/cicd/.mono/temp/obj/Debug/cicd.csproj.CoreCompileInputs.cache
+/home/dwooten/godot/cicd/.mono/temp/bin/Debug/cicd.dll
+/home/dwooten/godot/cicd/.mono/temp/bin/Debug/cicd.pdb
+/home/dwooten/godot/cicd/.mono/temp/obj/Debug/cicd.dll
+/home/dwooten/godot/cicd/.mono/temp/obj/Debug/cicd.pdb

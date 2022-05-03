@@ -1,0 +1,45 @@
+{
+  "format": 1,
+  "restore": {
+    "/home/dwooten/godot/cicd/cicd.csproj": {}
+  },
+  "projects": {
+    "/home/dwooten/godot/cicd/cicd.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/dwooten/godot/cicd/cicd.csproj",
+        "projectName": "cicd",
+        "projectPath": "/home/dwooten/godot/cicd/cicd.csproj",
+        "packagesPath": "/home/dwooten/.nuget/packages/",
+        "outputPath": "/home/dwooten/godot/cicd/.mono/temp/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/dwooten/.config/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net472"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net472": {
+            "targetAlias": "net472",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net472": {
+          "targetAlias": "net472",
+          "runtimeIdentifierGraphPath": "/usr/lib/mono/msbuild/Current/bin/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
