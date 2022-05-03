@@ -1,16 +1,18 @@
 extends GutTest
 
+const ResourceFunctions :Script = preload("res://Scenes/resource_functions.gd")
+var resource: ResourceFunctions
 
-# Declare member variables here. Examples:
-# var a = 2
-# var b = "text"
+func before_each():
+	resource = ResourceFunctions.new()
+	resource.create(100)
 
-
-# Called when the node enters the scene tree for the first time.
-func _ready():
-	pass # Replace with function body.
-
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-#func _process(delta):
-#	pass
+func test_damage():
+	var hp: int = resource.hp
+	resource.damage(10)
+	self.assert_eq(hp-10, resource.hp, "Doing damage should reduce hp by the given amount")
+	
+func test_damage_too_much():
+	var hp: int = resource.hp
+	resource.damage(2*hp)
+	self.assert_eq(0, resource.hp, "Doing damage > hp should leave hp==0")

@@ -17,7 +17,10 @@ jobs:
         with:
           lfs: true
       - name: Test
-        run: godot -s addons/gut/gut_cmdln.gd -d --path $PWD -gexit -gdir=res://test/unit
+        run: godot -s addons/gut/gut_cmdln.gd --path $PWD -gexit -gdir=res://test/unit
       - name: Shouldntfail
         run: echo Should not get here
+      - name: OnlyIfFail
+        if: always() && (steps.Test.outcome == 'failure')
+        run: echo Tests Failed wooooooooo
           
