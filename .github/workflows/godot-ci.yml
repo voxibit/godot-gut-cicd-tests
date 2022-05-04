@@ -20,7 +20,7 @@ jobs:
         with:
           lfs: true
       - name: Test
-        run: godot -s addons/gut/gut_cmdln.gd --path $PWD -gexit -gdir=res://test/unit
+        run: godot -s addons/gut/gut_cmdln.gd --path $PWD -gexit -gdir=res://test/unit -glog=2
       - name: AlwaysRun
         if: always()
         run: echo This should always run
