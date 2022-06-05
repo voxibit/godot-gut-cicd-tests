@@ -17,3 +17,5 @@ repos:
     rev: 3.4.0
     hooks:
     -   id: gdlint
+    -   id: gdformat
+        args: [--diff]
