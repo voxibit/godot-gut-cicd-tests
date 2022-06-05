@@ -11,7 +11,7 @@ func test_damage():
 	var hp: int = resource.hp
 	resource.damage(10)
 	self.assert_eq(hp-10, resource.hp, "Doing damage should reduce hp by the given amount")
-	
+
 func test_damage_too_much():
 	var hp: int = resource.hp
 	resource.damage(2*hp)
